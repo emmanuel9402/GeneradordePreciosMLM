@@ -1,0 +1,18 @@
+Proveedor = float( input("Introduce el costo del producto "))
+Envio = float( input("Introduce el costo de envio "))
+
+if Proveedor <= 1000:
+    print("La comision en clasica es ", Proveedor*0.13)
+    print("El costo total en clasica es", Proveedor + Proveedor*0.13) 
+    print("La comision en premium es ", Proveedor*0.175)
+    print("El costo total en premium es", Proveedor + Proveedor*0.175) 
+elif Proveedor >= 1000 and Proveedor <= 5000:
+    print("La comision en clasica es ", 130 + ((Proveedor-1000)*.10))
+    print("El costo total en clasica es ", Proveedor + 130 + ((Proveedor-1000)*.10))
+    print("La comision en premium es ", 175 + ((Proveedor-1000)*.145))
+    print("El costo total en premium es ", Proveedor + 175 + ((Proveedor-1000)*.10))
+elif Proveedor >= 5000:
+    print("La comision en clasica es ", 530 + ((Proveedor-5000)*.07))
+    print("El costo total en clasica es ", Proveedor + 530 + ((Proveedor-5000)*.07))
+    print("La comision en premium es ", 755 + ((Proveedor-5000)*.115))
+    print("El costo total en premium es ", Proveedor + 755 + ((Proveedor-5000)*.115))
